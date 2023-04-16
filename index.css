@@ -1,0 +1,194 @@
+/*inheritance
+cascade
+box-model
+
+button
+input
+textarea
+select
+repeat(3, 1fr)
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body{
+    padding: 0.125rem;
+}
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+} 
+h1,
+h2,
+h3 {
+    font-family: sans-serif;
+    color: coral;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h1{
+    font-size: clamp(1.5rem, 1rem + 3vw, 5rem);
+}
+
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+header h1 {
+    background-color: aqua;
+    border-radius: 0rem;
+}
+h2{
+    color: coral;
+}
+nav img {
+    max-width: 50%;
+}
+nav{
+    
+    border-radius: 0rem;
+    padding: 1.25rem;
+    padding-top: 0rem;
+    /*
+    box-shadow: 0 1.5rem --1.5rem rgba(red, green, blue, alpha);
+    */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.logo{
+    padding-left: 2rem;
+}
+.menu{
+    
+    padding-left: 10rem;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    
+    padding: 0rem 0rem;
+    margin: 0.5rem;
+    cursor: pointer;    
+}
+
+nav ul li a{
+    color: purple;
+    font-size: 1.5rem;
+}
+
+.testimonial-grid{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns:1fr 2fr ;
+    background-image: url(images/Solution/background.png);
+}
+.botox2 h2{
+    color: coral;
+}
+.testimonial-grids{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+}
+.testimonial-grids4{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -80;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(80vh);
+        opacity: 0;
+    }
+    70%{
+        transform: translateY(70vh);
+        opacity: 0;
+    }
+    70%{
+        transform: translateY(30vh);
+        opacity: 0;
+    }
+    30%{
+        
+        opacity: 0;
+    }
+    40%{
+        transform: translateY(70vh);
+        opacity: 0;
+    }
+    70%{
+        
+        opacity: 0;
+    }
+    80%{
+        transform: translateY(30vh);
+        opacity: 0;
+    }
+    
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 5s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 7s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 5s;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 7s;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 3s;
+}
+
